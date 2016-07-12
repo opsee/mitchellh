@@ -1,6 +1,6 @@
 # Mitchell Hashimoto Fansite
 
-![Mitchell Hashimoto][mitchellh.jpg]
+![Mitchell Hashimoto](mitchellh.jpg)
 
 Welcome to our Mitchell Hashimoto fan site. You can join our club by following
 these simple instructions.
