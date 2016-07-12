@@ -1,3 +1,3 @@
 STACK := vpc
 
-include $(CURDIR)/../Makefile
+include $(CURDIR)/../base.mk
