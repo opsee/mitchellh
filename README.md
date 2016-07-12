@@ -8,16 +8,12 @@ these simple instructions.
 ## Organization
 
 Terraform resources have been split up into smaller stacks so that changes can be
-made more easily. This is to facilitate making changes quickly and easily while
-facilitating collaboration between team members--as making a change requires that
-the appropriate Terraform state be "locked" before additional changes can be made.
-
-If you intend to change a particular stack, tell someone in #backend with @here
-that you intend to change a stack. This is necessary, because after your changes
-have been made, Terraform will push your copy of the state to S3. You could
-unintentionally overwrite changes someone else has made. A more formal locking
-mechanism can be put into place if/when we choose to move from s3 to etcd for
-our state stores.
+made more easily. If you intend to change a particular stack, tell people in
+`#backend` with @here that you intend to change a stack. This is necessary,
+because after your changes have been made, Terraform will push your copy of
+the state to S3. You could unintentionally overwrite changes someone else has
+made. A more formal locking mechanism can be put into place if/when we choose
+to move from s3 to etcd for our state stores.
 
 Remote state is stored in s3 in the opsee-terraform-state bucket. Each environment
 for each stack has its own state file. This allows changes to be made and tested
